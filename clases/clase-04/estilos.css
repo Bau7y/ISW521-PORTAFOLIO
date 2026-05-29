@@ -1,0 +1,25 @@
+p {
+    color: blue;
+    font-size: 18px;
+    text-align: center;
+}
+
+* a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+
+}
+
+#third-paragraph {
+    color: green;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+input[type="text"] {
+    border: 2px solid gray;
+    padding: 5px;
+    font-size: 16px;
+}

@@ -1,0 +1,1 @@
+Esta clase abarcó el tema de CSS hasta las subclases, se realizaron prácticas de aplicación de estilos y hubo una presentación acerca de HTTP/2
