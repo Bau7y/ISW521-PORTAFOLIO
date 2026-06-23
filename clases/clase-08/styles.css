@@ -66,9 +66,6 @@ button {
     border-radius: var(--radius_sm);
 }
 
-/* ══════════════════════════════════════════
-    NAVBAR
-══════════════════════════════════════════ */
 .navbar {
     position: fixed;
     top: 0;
@@ -181,9 +178,6 @@ button {
     color: var(--color_primary);
 }
 
-/* ══════════════════════════════════════════
-    CONTENEDOR
-══════════════════════════════════════════ */
 .container {
     width: 100%;
     max-width: 1100px;
@@ -191,9 +185,6 @@ button {
     padding-inline: 1.25rem;
 }
 
-/* ══════════════════════════════════════════
-    SECCIÓN BASE
-══════════════════════════════════════════ */
 .section {
     padding: 5rem 0;
 }
@@ -376,9 +367,6 @@ hr.section__divider {
     color: var(--color_primary);
 }
 
-/* ══════════════════════════════════════════
-    SOBRE MÍ
-══════════════════════════════════════════ */
 .about {
     background: var(--color_surface);
     border-top: 1px solid var(--color_border);
@@ -418,9 +406,6 @@ hr.section__divider {
     color: var(--color_muted);
 }
 
-/* ══════════════════════════════════════════
-    PROYECTOS
-══════════════════════════════════════════ */
 .projects {
     background: var(--color_bg);
 }
@@ -510,9 +495,6 @@ hr.section__divider {
     padding: 0.2rem 0.65rem;
 }
 
-/* ══════════════════════════════════════════
-    HABILIDADES
-══════════════════════════════════════════ */
 .skills {
     background: var(--color_surface);
     border-top: 1px solid var(--color_border);
@@ -548,10 +530,6 @@ hr.section__divider {
 }
 
 
-
-/* ══════════════════════════════════════════
-    FOOTER
-══════════════════════════════════════════ */
 footer {
     background: var(--color_surface);
     border-top: 1px solid var(--color_border);
@@ -568,9 +546,6 @@ footer span {
     color: var(--color_primary);
 }
 
-/* ══════════════════════════════════════════
-    BREAKPOINTS
-══════════════════════════════════════════ */
 
 /* Tablet: 600px */
 @media (min-width: 600px) {
