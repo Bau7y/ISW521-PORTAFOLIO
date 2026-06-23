@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portafolio personal de Sebastián Rojas Hernández — Estudiante de Ingeniería en Software, UTN San Carlos.">
+    <title>Portafolio Personal</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════════
+       NAVBAR
+  ══════════════════════════════════════════ -->
+  <nav class="navbar" role="navigation" aria-label="Navegación principal">
+    <div class="navbar__inner">
+      <span class="navbar__logo">SR_</span>
+
+      <ul class="navbar__links" role="list">
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+      </ul>
+
+      <button
+        class="btn-menu"
+        id="menu-toggle"
+        aria-label="Abrir menú de navegación"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+    <div
+      class="navbar__mobile"
+      id="mobile-menu"
+      role="menu"
+      aria-label="Menú móvil"
+    >
+      <a href="#sobre-mi" role="menuitem">Sobre mí</a>
+      <a href="#proyectos" role="menuitem">Proyectos</a>
+      <a href="#habilidades" role="menuitem">Habilidades</a>
+    </div>
+  </nav>
+
+  <main id="main-content">
+
+    <!-- ══════════════════════════════════════════
+         HERO
+    ══════════════════════════════════════════ -->
+    <section class="section hero" aria-labelledby="hero-nombre">
+      <div class="container">
+        <div class="hero__layout">
+
+          <!-- Avatar -->
+          <div class="hero__avatar-wrap">
+            <div
+              class="hero__avatar"
+              role="img"
+              aria-label="Avatar de Sebastián Rojas Hernández con iniciales SR"
+            ></div>
+          </div>
+
+          <!-- Contenido -->
+          <div class="hero__content">
+            <span class="hero__eyebrow">Ingeniería en Software - UTN San Carlos</span>
+            <h1 class="hero__name" id="hero-nombre">
+              Sebastián<br><span>Rojas</span> Hernández
+            </h1>
+            <p class="hero__bio">
+              Estudiante de segundo año con experiencia en desarrollo
+              frontend y backend, certificaciones en redes y Linux,
+              y un enfoque en soluciones prácticas orientadas al usuario.
+            </p>
+            <div class="hero__tags" role="list" aria-label="Tecnologías principales">
+              <span class="tag" role="listitem">JavaScript</span>
+              <span class="tag" role="listitem">Python</span>
+              <span class="tag" role="listitem">Java</span>
+              <span class="tag" role="listitem">C#</span>
+              <span class="tag" role="listitem">React</span>
+              <span class="tag" role="listitem">Node.js</span>
+              <span class="tag" role="listitem">MySQL</span>
+              <span class="tag" role="listitem">MongoDB</span>
+            </div>
+            <div class="hero__actions">
+              <a href="#proyectos" class="btn btn-primary">Ver proyectos</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <section class="section about" id="sobre-mi" aria-labelledby="sobre-titulo">
+      <div class="container">
+        <div class="about__grid">
+
+          <div>
+            <span class="section__label">Perfil</span>
+            <h2 class="section__title" id="sobre-titulo">Sobre mí</h2>
+            <p class="section__desc">
+              Técnico en Redes y Sistemas Operativos graduado del
+              CTP de San Carlos. Actualmente en segundo año de
+              Ingeniería en Software en la UTN. Me adapto fácilmente,
+              trabajo bien bajo presión y tengo manejo avanzado del inglés.
+              Cuento con experiencia laboral real en desarrollo frontend
+              y soporte técnico.
+            </p>
+          </div>
+
+          <div class="about__stat-grid">
+            <div class="stat-card">
+              <div class="stat-card__num">2+</div>
+              <div class="stat-card__label">Años de experiencia en desarrollo</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-card__num">6</div>
+              <div class="stat-card__label">Certificaciones (CCNA, Linux, Python)</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-card__num">8+</div>
+              <div class="stat-card__label">Tecnologías y lenguajes dominados</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-card__num">B2+</div>
+              <div class="stat-card__label">Nivel de inglés</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section projects" id="proyectos" aria-labelledby="proyectos-titulo">
+      <div class="container">
+
+        <div class="projects__header">
+          <span class="section__label">Trabajo</span>
+          <h2 class="section__title" id="proyectos-titulo">Proyectos</h2>
+          <p class="section__desc">
+            Selección de proyectos académicos y de uso real desarrollados
+            durante mi formación en la UTN San Carlos.
+          </p>
+        </div>
+
+        <div class="projects__grid">
+
+          <article class="project-card" aria-labelledby="proj-1-titulo">
+            <div class="project-card__top">
+              <a
+                href="https://github.com/Bau7y/CalcTipologias"
+                class="project-card__link"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Ver repositorio de Calculadora de Tipologías en GitHub"
+              >
+                GitHub
+              </a>
+            </div>
+            <h3 id="proj-1-titulo">Calculadora de Tipologías ONT</h3>
+            <p>
+              Herramienta de escritorio para el Departamento de Bienes
+              Inmuebles de la Municipalidad de San Carlos. Implementa
+              fórmulas exponenciales y de ley de potencia extraídas de
+              plantillas oficiales de valoración de propiedades.
+            </p>
+            <div class="project-card__tags">
+              <span class="tag">JavaScript</span>
+              <span class="tag">HTML5</span>
+              <span class="tag">CSS3</span>
+              <span class="tag">Tauri</span>
+            </div>
+          </article>
+
+          <article class="project-card" aria-labelledby="proj-2-titulo">
+            <div class="project-card__top">
+              <a
+                href="https://github.com/Bau7y/Lab01_Landing_Page_SR"
+                class="project-card__link"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Ver repositorio de TramiMuniSC en GitHub"
+              >
+                GitHub
+              </a>
+            </div>
+            <h3 id="proj-2-titulo">TramiMuniSC Landing Page</h3>
+            <p>
+              Landing page responsiva para un servicio de acompañamiento
+              en trámites municipales en San Carlos. HTML5 semántico,
+              CSS3 nativo con Flexbox y Grid, Web Components, dark mode
+              con localStorage y accesibilidad WCAG 2.1.
+            </p>
+            <div class="project-card__tags">
+              <span class="tag">HTML5</span>
+              <span class="tag">CSS3</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">Web Components</span>
+            </div>
+          </article>
+
+          <article class="project-card" aria-labelledby="proj-3-titulo">
+            <div class="project-card__top">
+              <a
+                href="https://github.com/Bau7y/poc-python/tree/main/proyecto01"
+                class="project-card__link"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Ver repositorio de POC Python en GitHub"
+              >
+                GitHub
+              </a>
+            </div>
+            <h3 id="proj-3-titulo">Rescue.py</h3>
+            <p>
+              Proyecto enfocado al desarrollo de videojuegos y simulaciones. 
+              Creado utilizando herramientas de pixel art para la creación de sprites 
+              y animaciones, y Python para la lógica del juego. Incluye un sistema de colisiones, 
+              físicas básicas y un motor de partículas.
+            </p>
+            <div class="project-card__tags">
+              <span class="tag">Python</span>
+              <span class="tag">PCAP</span>
+              <span class="tag">Scripting</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section skills" id="habilidades" aria-labelledby="skills-titulo">
+      <div class="container">
+
+        <span class="section__label">Stack</span>
+        <h2 class="section__title" id="skills-titulo">Habilidades técnicas</h2>
+
+        <div class="skills__grid" style="margin-top: 2rem;">
+
+          <div class="skill-group">
+            <h3>Frontend</h3>
+            <div class="skill-group__tags">
+              <span class="tag">HTML5</span>
+              <span class="tag">CSS3</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">React</span>
+              <span class="tag">Next.js</span>
+              <span class="tag">Tailwind</span>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <h3>Backend y BD</h3>
+            <div class="skill-group__tags">
+              <span class="tag">Node.js</span>
+              <span class="tag">Python</span>
+              <span class="tag">Java</span>
+              <span class="tag">C#</span>
+              <span class="tag">MySQL</span>
+              <span class="tag">MongoDB</span>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <h3>Redes y sistemas</h3>
+            <div class="skill-group__tags">
+              <span class="tag">CCNA 1–3</span>
+              <span class="tag">Linux</span>
+              <span class="tag">CyberOps</span>
+              <span class="tag">TCP/IP</span>
+              <span class="tag">AnyDesk</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <p>© <span id="year"></span> Sebastián Rojas Hernández UTN San Carlos</p>
+  </footer>
+</body>
+</html>
